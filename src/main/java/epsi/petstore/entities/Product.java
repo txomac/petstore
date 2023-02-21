@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import epsi.petstore.entities.enumtype.ProdType;
 
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -29,7 +30,7 @@ public class Product {
             joinColumns = { @JoinColumn(name = "product_id") },
             inverseJoinColumns = { @JoinColumn(name = "id") }
     )
-    Set<PetStore> petStores;
+    private Set<PetStore> petStores = new HashSet<>();
 
     public Product(String code, String label, ProdType prodType, Double price) {
         this.code = code;

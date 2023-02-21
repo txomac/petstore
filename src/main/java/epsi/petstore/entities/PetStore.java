@@ -29,6 +29,7 @@ public class PetStore {
 
     public void addProduct(Product product) {
         this.products.add(product);
+        product.getPetStores().add(this);
     }
 
     public PetStore(String name, String managerName, Address address) {

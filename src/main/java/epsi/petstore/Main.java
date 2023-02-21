@@ -25,8 +25,8 @@ public class Main {
         Product product3 = new Product("0667", "produit", ProdType.CLEANING, 10.00);
 
         Address address1 = new Address("05", "rue de la tortue", "01337", "Nantes");
-        Address address2 = new Address("06", "avenue des chats", "01373", "Nantes");
-        Address address3 = new Address("07", "avenue des chiens", "06670", "Nantes");
+        Address address2 = new Address("06", "avenue des chats", "01373", "Paris");
+        Address address3 = new Address("07", "avenue des chiens", "06670", "Bordeaux");
         PetStore petStore1 = new PetStore("AnimalStore1", "Thomas Henaff", address1);
         petStore1.addProduct(product1);
         petStore1.addProduct(product2);
